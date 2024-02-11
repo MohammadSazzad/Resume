@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Inter, sans-serif;
+    background-color: white;
+    color: rgb(229, 223, 223);
+}
+/*common Style*/
+img{
+    width :100%;
+    border-radius: 10%;
+}
+.Description{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.title:hover{
+    color: peru;
+}
+.title{
+    color: rgb(151, 226, 236);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.item_pretitle{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+/*layout*/
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background-color: rgb(54, 84, 84);
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.group1, .group2{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 5rem;
+}
+.group3{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    grid-column: 1/ -1;
+    flex-direction: row;
+    gap: 5rem;
+}
+.group3 > div {
+    flex: 1;
+}
+@media only screen and (max-width: 768px) {
+    .profile{
+        margin-bottom: 0rem;
+    }
+    .group3{
+        flex-direction: column;
+    }
+}
+
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+.profile_img{
+    max-width: 250px;
+}
+.firstname{
+    color: white;
+    font-weight: 200;
+    font: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -1rem;
+}
+.lastname{
+    color: rgb(151, 226, 236);
+    font-weight: 700;
+    font-size: clamp(2.5rem,15vw,7rem);
+    /*text-transform: uppercase;*/
+    display: block;
+}
+.profile_title{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:768px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+.ref_item{
+    margin-top: 2rem
+}
+.name1{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.certificate_item{
+    margin-top: 2rem;
+}
+.exp_item{
+    margin-top: 2rem;
+}
+.awards_item{
+    margin-top: 2rem;
+}
+.interest_item{
+    margin-top: 2rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap ;
+    gap: 2rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(229, 223, 223);
+}
+.social_items{
+    margin-top: 2rem;
+}
+.social_item{
+    margin-top: 1.5rem;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.social_item:hover{
+    color: peru;
+}
+.social_item svg{
+    width: 2rem;
+}
+hr{
+    grid-column: 1/ -1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 2px solid rgba(128, 128, 128, 0.209);
+}
+
+@media only screen and (max-width: 768px) {
+    hr{
+        margin: 0 auto;
+    }
+}
